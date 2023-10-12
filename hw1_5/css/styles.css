@@ -1,80 +1,58 @@
-.container {
-  max-width: 1180px;
-  margin: 0 auto;
-  padding: 0 30px;
-}
-.header {
-  background-color: aquamarine;
-  min-height: 100px;
-}
-.topnav {
-  background-color: burlywood;
-  min-height: 40px;
-}
-.topmenu {
-  list-style: none;
-  padding: 10px 0;
-  font-size: 0;
-  margin: 0 -10px;
-}
-.topmenu li {
-  display: inline-block;
-  margin: 0 10px;
-  font-size: 16px;
-}
-.topmenu a {
-  display: inline-block;
-  text-decoration: none;
-  color: inherit;
-  background-color: blanchedalmond;
-  padding: 5px 5px;
-}
-.aside,
-.main {
-  display: inline-block;
-}
-.aside {
-  background-color: cornflowerblue;
-  width: 200px;
-}
-.main {
-  background-color: darkolivegreen;
-  width: calc(100% - 200px);
-}
-.footer {
-  background-color: crimson;
-}
-.menu-in-line {
-  display: inline-block;
-  margin-right: 20px;
+body {
+  font-family: "Ubuntu", sans-serif;
 }
 
-@media screen and (max-width: 800px) {
-  .container {
-    padding: 0 15px;
-  }
-  aside {
-    display: none;
-  }
-  main {
-    width: 100%;
-  }
-  .menu-in-line {
-    display: block;
-  }
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
 }
-@media screen and (max-width: 400px) {
-  .menuItem__img {
-    margin-bottom: 2px;
-    display: none;
-  }
+.row {
+  display: flex;
+  flex-direction: row;
 }
-@media screen and (max-width: 500px) {
-  .topmenu li {
-    display: block;
-  }
-  .topmenu a {
-    display: block;
-    margin: 5px -5px;
-  }
+.header {
+  justify-content: space-between;
+}
+.logo {
+  padding: 35px 0 40px 0;
+}
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.menu li {
+  padding: 35px 0;
+  display: inline-block;
+}
+.menu li a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 300;
+  margin-right: 40px;
+  color: #333333;
+}
+.main {
+  margin-top: 50px;
+}
+.left_block {
+  margin-left: 50px;
+}
+.main_h1 {
+  font-size: 55px;
+  font-weight: 100;
+  color: #333333;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.main_h3 {
+  font-size: 26px;
+  font-weight: 100;
+  color: #1d9d73;
+  margin-top: 52px;
+}
+.main_text {
+  font-size: 18px;
+  font-weight: 100;
+  color: #888888;
+  margin-top: 40px;
 }
