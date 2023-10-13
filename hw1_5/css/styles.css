@@ -5,10 +5,17 @@ body {
 .container {
   max-width: 1280px;
   margin: 0 auto;
+  box-sizing: border-box;
 }
 .row {
+  margin: 0 -10px;
   display: flex;
   flex-direction: row;
+}
+.col {
+  margin-left: 10px;
+  margin-right: 10px;
+  box-sizing: border-box;
 }
 .header {
   justify-content: space-between;
