@@ -1,3 +1,7 @@
+:root {
+  --green:#1d9d73;
+  --offset:15px;
+}
 body {
     font-family: "Ubuntu", sans-serif;
     font-weight: 300;
@@ -44,10 +48,10 @@ body {
   .row {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 -15px;
+    margin: 0 var(--offset)* -1;
   }
   .col {
-    margin: 0 15px;
+    margin: 0 var(--offset);
     box-sizing: border-box;
   }
   
