@@ -1,0 +1,99 @@
+@font-face {
+  font-family: Helvetica;
+  src: url(../fonts/helvetica.woff2);
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Helvetica-Bold";
+  src: url(../fonts/helvetica-bold.woff2);
+  font-style: normal;
+  font-weight: 700;
+}
+:root {
+  --grey: #5c5c5e;
+}
+body {
+  font-family: Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  color: var(--grey);
+}
+.container {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+.header {
+  border-bottom: 1px solid #cacad6;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+.menu {
+  display: flex;
+  gap: 0 20px;
+}
+.basket {
+  position: relative;
+}
+.basket span {
+  font-size: 11px;
+  color: #fff;
+  width: 15px;
+  height: 15px;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  right: -2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/*Section-Top*/
+.top {
+  min-height: calc(100vh - 81px);
+  background-image: url(../images/top-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+}
+.title {
+  padding-top: 60px;
+  font-size: 96px;
+  color: var(--grey);
+  margin-bottom: 10px;
+}
+.subtitle {
+  font-size: 36px;
+}
+.top__text {
+  font-size: 13px;
+  margin-bottom: 50px;
+}
+.buy__text {
+  font-size: 13px;
+  margin-top: 10px;
+}
+.buy-btn {
+  cursor: pointer;
+  border: none;
+  background: linear-gradient(180deg, #bc10d8 0%, rgba(80, 0, 250, 0.93) 100%);
+  display: flex;
+  padding: 0;
+  text-transform: uppercase;
+  padding: 1px;
+}
+.buy-btn__text {
+  color: #f6f4f5;
+  padding: 20px 110px;
+}
+.buy-btn__price {
+  background-color: #f6f4f5;
+  padding: 20px 105px;
+}

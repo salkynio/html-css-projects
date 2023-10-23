@@ -194,7 +194,6 @@ span {
 }
 .comfort-item-col {
   width: calc(100% / 2 -20px);
-  margin-right: 20px;
 }
 .comfort-title {
   font-size: 32px;

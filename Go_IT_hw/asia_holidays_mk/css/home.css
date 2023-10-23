@@ -1,0 +1,15 @@
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo-text {
+  position: absolute;
+  top: 125px;
+  left: 180px;
+  color: #2191ad;
+}
+.contacts {
+  color: #2191ad;
+  margin-bottom: 5px;
+}
