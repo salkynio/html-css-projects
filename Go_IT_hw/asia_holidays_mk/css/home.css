@@ -1,3 +1,6 @@
+header .container {
+  padding: 0;
+}
 .header-wrapper {
   display: flex;
   justify-content: space-between;
@@ -5,11 +8,40 @@
 }
 .logo-text {
   position: absolute;
-  top: 125px;
-  left: 180px;
+  top: 86px;
+  left: 132px;
   color: #2191ad;
 }
 .contacts {
   color: #2191ad;
-  margin-bottom: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.phones a {
+  text-decoration: none;
+  color: #2191ad;
+  font-size: 16px;
+}
+.menu .container {
+  padding: 0;
+}
+.menu__list {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  background-color: #303030;
+  padding: 20px 20px;
+  margin-top: 0;
+}
+.top-photo-section .container {
+  padding: 0;
+}
+/* .menu {
+  background-color: #303030;
+} */
+.menu__list a {
+  color: #fff;
+  list-style-type: none;
+  text-decoration: none;
 }
