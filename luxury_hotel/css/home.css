@@ -175,6 +175,7 @@ span {
 /*COMFORT-SECTION*/
 .comfort-section {
   background-color: #fffaf2;
+  margin-bottom: 80px;
 }
 .stars {
   display: flex;
@@ -195,13 +196,15 @@ span {
 .comfort-item-col {
   width: calc(100% / 2 -20px);
 }
-.comfort-title {
+.comfort-title,
+.suites-main-title {
   font-size: 32px;
   font-weight: bolder;
   text-transform: capitalize;
   letter-spacing: 3px;
 }
-.stars-title {
+.stars-title,
+.suites-title {
   text-transform: uppercase;
   font-size: 12px;
   margin-bottom: 30px;
@@ -213,4 +216,37 @@ span {
   letter-spacing: 1px;
   font-weight: bold;
   color: #383841;
+}
+/* SUITES & ROOM*/
+.suites-item {
+  width: calc(100% / 3);
+}
+.suites-item::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+.suites-item-down {
+  width: calc(100% / 2);
+}
+.suites-item img {
+  border-radius: 25px;
+}
+.suites-item-down img {
+  border-radius: 25px;
+}
+.col-suites {
+  padding: 0;
+  box-sizing: border-box;
+}
+.suites-main-title {
+  margin-bottom: 20px;
+}
+.lower-suites-block {
+  margin-top: 10px;
 }
