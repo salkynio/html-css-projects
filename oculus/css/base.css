@@ -13,6 +13,12 @@
 :root {
   --grey: #5c5c5e;
 }
+.section-title {
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
 body {
   font-family: Helvetica, sans-serif;
   font-weight: 400;
@@ -29,17 +35,21 @@ body {
   border-bottom: 1px solid #cacad6;
 }
 .nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   height: 80px;
+  padding-top: 10px;
 }
 .menu {
   display: flex;
   gap: 0 20px;
 }
+.logo {
+  justify-self: center;
+}
 .basket {
   position: relative;
+  justify-self: end;
 }
 .basket span {
   font-size: 11px;
@@ -54,6 +64,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  display: none;
 }
 /*Section-Top*/
 .top {
@@ -67,6 +78,7 @@ body {
   padding-top: 60px;
   font-size: 96px;
   color: var(--grey);
+  font-weight: 400;
   margin-bottom: 10px;
 }
 .subtitle {
@@ -96,4 +108,87 @@ body {
 .buy-btn__price {
   background-color: #f6f4f5;
   padding: 20px 105px;
+}
+/*FEATURES*/
+.features {
+  padding: 100px 0;
+}
+.features_titles {
+  display: flex;
+}
+.features_title {
+  flex-basis: 300px;
+  /* padding-right: 20px; */
+}
+.features_text {
+  max-width: 330px;
+  font-weight: 400;
+  font-size: 36px;
+  text-transform: uppercase;
+  margin-bottom: 2px;
+  background: linear-gradient(180deg, #bc10d8 0%, rgba(80, 0, 250, 0.93) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.tabs {
+  display: grid;
+  grid-template-columns: 300px auto;
+}
+.tabs_btn {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.tabs_btn-item {
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.tabs_btn-item--active {
+  color: #070707;
+}
+.tabs_content {
+  position: relative;
+  min-height: 300px;
+}
+.tabs_content-item {
+  display: grid;
+  grid-template-columns: auto 280px;
+  grid-template-rows: auto 150px;
+  gap: 40px;
+  opacity: 0;
+  position: absolute;
+}
+.tabs_content-item--active {
+  opacity: 1;
+}
+
+.video {
+  grid-column: 2/3;
+  width: 273px;
+  /* height: 150px; */
+  background-image: url(../images/content-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: start;
+  padding: 9px 10px;
+}
+.video-btn {
+  margin-left: 22px;
+}
+.video span {
+  font-size: 13px;
+  color: #f6f4f5;
+}
+.tabs-content-box h3 {
+  font-weight: 400;
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+.tabs-content-img {
+  grid-row: 1/-1;
+  align-self: stretch;
 }
