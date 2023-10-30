@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Tahoma, sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url(../images/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.wrapper {
+  width: 500px;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* border: 2px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
+  padding: 30px 80px;
+}
+.logo-header {
+  font-size: 24px;
+  color: #fff;
+}
+.logo {
+  text-align: center;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 20px;
+}
+.wrapper .input-box {
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
+}
+.input-box input {
+  width: 100%;
+  height: 100%;
+  color: whitesmoke;
+  background: transparent;
+  backdrop-filter: blur(20px);
+  border: none;
+  font-size: 16px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  padding: 20px 45px 20px 20px;
+  border-radius: 5px;
+}
+.input-box input::placeholder {
+  color: #fff;
+}
+.input-box:focus {
+  border: 2px solid hotpink;
+}
+.youtube-update {
+  color: #dcdcdc;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14.5px;
+  margin: -15px 0 15px;
+}
+.youtube-update label input {
+  accent-color: #fff;
+  margin-right: 3px;
+}
+.wrapper .btn {
+  width: 100%;
+  height: 45px;
+  background-color: blueviolet;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.form-text {
+  font-size: 13px;
+  color: whitesmoke;
+  text-align: center;
+}
