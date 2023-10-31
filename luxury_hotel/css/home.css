@@ -71,7 +71,7 @@ span {
   content: "";
   display: block;
   left: 0;
-  top: -1pz;
+  top: -1px;
   position: absolute;
   background: rgba(0, 0, 0, 0.5);
   width: 100%;
@@ -218,6 +218,9 @@ span {
   color: #383841;
 }
 /* SUITES & ROOM*/
+.suites-section {
+  margin-bottom: 100px;
+}
 .suites-item {
   width: calc(100% / 3);
   position: relative;
@@ -261,4 +264,52 @@ span {
   text-transform: uppercase;
   border-bottom: 2px solid #fff;
   padding-bottom: 13px;
+}
+
+/* Promo-section */
+.promo {
+  background-image: url(../img/main-bg2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 500px;
+}
+.promo-stars {
+  margin-top: 200px;
+  margin-bottom: 15px;
+  justify-content: center;
+  gap: 5px;
+}
+/* .promo ::before {
+  content: "";
+  display: block;
+  left: 0;
+  top: -1px;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: 500px;} */
+
+.promo-title {
+  font-weight: 500;
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+.promo-subtitle {
+  font-weight: 500;
+  font-size: 32px;
+  color: #fff;
+  text-align: center;
+  text-transform: capitalize;
+}
+.play {
+  margin-left: 570px;
+  margin-top: 10px;
+}
+.play i {
+  color: #fff;
+  font-size: 42px;
 }
