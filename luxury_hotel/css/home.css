@@ -71,11 +71,11 @@ span {
   content: "";
   display: block;
   left: 0;
-  top: 0;
+  top: -1pz;
   position: absolute;
   background: rgba(0, 0, 0, 0.5);
   width: 100%;
-  height: 100%;
+  height: 792px;
 }
 .main-section .container {
   position: relative;
@@ -220,18 +220,10 @@ span {
 /* SUITES & ROOM*/
 .suites-item {
   width: calc(100% / 3);
-}
-.suites-item::before {
-  content: " ";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  position: relative;
 }
 .suites-item-down {
+  position: relative;
   width: calc(100% / 2);
 }
 .suites-item img {
@@ -249,4 +241,24 @@ span {
 }
 .lower-suites-block {
   margin-top: 10px;
+}
+.price {
+  position: absolute;
+  left: 36px;
+  bottom: 70px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.room-descr {
+  position: absolute;
+  left: 36px;
+  bottom: 27px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
+  border-bottom: 2px solid #fff;
+  padding-bottom: 13px;
 }
